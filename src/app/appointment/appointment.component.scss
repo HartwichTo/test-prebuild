@@ -1,0 +1,21 @@
+.appointment {
+  display: flex;
+  align-items: center;
+  padding: var(--app-padding);
+  gap: var(--app-spacing);
+}
+
+.appointment-times {
+  flex: 0 var(--left-col-width);
+}
+
+.appointment-time,
+.appointment-title {
+  font-size: 1.5rem;
+}
+
+.appointment-time--enlarged,
+.appointment-title--enlarged {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+}

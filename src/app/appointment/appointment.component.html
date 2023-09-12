@@ -1,0 +1,23 @@
+<section *ngIf="appointment" class="appointment">
+  <div class="appointment-times">
+    <time class="appointment-time">
+      {{ appointment.free ? 'bis' : (appointment.start.dateTime | date: 'HH:mm') }}
+    </time>
+    <time
+      [ngClass]="{
+        'appointment-time': true,
+        'appointment-time--enlarged': enlarged
+      }"
+    >
+      {{ appointment.end.dateTime | date: 'HH:mm' }}
+    </time>
+  </div>
+  <p
+    [ngClass]="{
+      'appointment-title': true,
+      'appointment-title--enlarged': enlarged
+    }"
+  >
+    {{ appointment.summary }}
+  </p>
+</section>

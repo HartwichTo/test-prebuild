@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: var(--app-padding);
+  background-color: rgba(217, 217, 217, 0.2);
+  gap: var(--app-spacing);
+}
+
+.header-logo {
+  flex: 0 var(--left-col-width);
+}
+
+.header-roomname {
+  font-size: var(--font-size-large);
+  font-weight: normal;
+  flex: 1;
+}
+
+.header-clock {
+  font-size: var(--font-size-large);
+  color: var(--insfx-orange);
+}

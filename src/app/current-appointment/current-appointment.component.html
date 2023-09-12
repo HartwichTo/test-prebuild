@@ -1,0 +1,19 @@
+<section *ngIf="appointment" class="current-appointment">
+  <app-appointment [enlarged]="true" [appointment]="appointment"> </app-appointment>
+
+  <div *ngIf="appointment.free; else release" class="book-room">
+    <label class="book-room__label" for="new-appointment">Termin name:</label>
+    <input class="book-room__input" id="new-appointment" #appointmentName />
+    <button
+      type="button"
+      class="book-room__button"
+      (click)="bookRoom(appointmentName.value); appointmentName.value = 'Gebucht'"
+    >
+      Raum buchen
+    </button>
+  </div>
+
+  <ng-template #release>
+      <button type="button" class="release-room__button" (click)="releaseRoom()">Raum freigeben</button>
+  </ng-template>
+</section>

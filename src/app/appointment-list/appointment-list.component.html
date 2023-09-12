@@ -1,0 +1,8 @@
+<ng-container *ngFor="let app of appointments$ | async; first as first">
+    <app-current-appointment *ngIf="first; else appointment" [appointment]="app">
+    </app-current-appointment>
+
+    <ng-template #appointment>
+        <app-appointment [appointment]="app">{{ appointments$}}</app-appointment>
+    </ng-template>
+</ng-container>

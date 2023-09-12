@@ -1,0 +1,18 @@
+:host {
+  flex-basis: 50%;
+}
+
+.book-room {
+  display: flex;
+  padding: var(--app-padding);
+  gap: 1rem;
+}
+
+.book-room__button {
+  background-color: var(--insfx-orange);
+  border: None;
+}
+
+.release-room {
+  padding: var(--app-padding);
+}

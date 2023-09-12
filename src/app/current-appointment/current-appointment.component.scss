@@ -1,0 +1,22 @@
+.current-appointment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--app-spacing);
+}
+
+.book-room {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.book-room__button {
+  background-color: var(--insfx-orange);
+  padding: 0.5rem;
+}
+
+.release-room__button {
+  background-color: var(--insfx-orange);
+  padding: 0.5rem;
+}
